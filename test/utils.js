@@ -40,5 +40,8 @@ describe("Utils", () => {
     it("Multiplies one positive number with one negative number", () => {
       expect(multiply(-4, 5)).to.equal(-20);
     });
+    it("Intentionally fails a test", () => {
+      expect(multiply(-4, 5)).to.equal(-21);
+    });
   });
 });
